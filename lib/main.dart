@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
 
   //adding stream controller
   StreamController<double> controller = StreamController();
+  StreamSubscription<double>streamSubscription;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
 
                 //added stream listener....
                 Stream stream = controller.stream;
-                stream.listen((event) {
+               streamSubscription = stream.listen((event) {
                   print("subscribe: $event");
 
                 });
@@ -58,6 +59,7 @@ class MyApp extends StatelessWidget {
                     "UnSubscribe"
                   ),
                   onPressed: (){
+                  streamSubscription.cancel();
 
                   })
          ] ),
