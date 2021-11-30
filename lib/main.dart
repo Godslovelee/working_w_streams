@@ -7,6 +7,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
+  //adding stream controller
   StreamController<double> controller = StreamController();
   @override
   Widget build(BuildContext context) {
@@ -36,6 +38,9 @@ class MyApp extends StatelessWidget {
             ),
 
               MaterialButton(
+                  child: Text(
+                    "follow"
+                  ),
                   color: Colors.blue,
                   onPressed: (){
 
