@@ -49,7 +49,13 @@ class MyApp extends StatelessWidget {
                     //add value to stream
                     controller.add(13);
 
-                  })
+                  }),
+
+              MaterialButton(
+                  child: Text(
+                    "UnSubscribe"
+                  ),
+                  onPressed: (){})
          ] ),
 
         ),
