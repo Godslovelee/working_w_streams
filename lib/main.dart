@@ -27,6 +27,8 @@ class MyApp extends StatelessWidget {
               ),
               color: Colors.brown,
               onPressed: () {
+
+                //added stream listener....
                 Stream stream = controller.stream;
                 stream.listen((event) {
                   print("something should happen");
@@ -43,6 +45,9 @@ class MyApp extends StatelessWidget {
                   ),
                   color: Colors.blue,
                   onPressed: (){
+
+                    //add value to stream
+                    controller.add(13);
 
                   })
          ] ),
