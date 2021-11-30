@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
               onPressed: () {
                 Stream stream = controller.stream;
                 stream.listen((event) {
+                  print("something should happen");
 
                 });
 
