@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
                 //added stream listener....
                 Stream stream = controller.stream;
                 stream.listen((event) {
-                  print("something should happen");
+                  print("subscribe: $event");
 
                 });
 
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
 
               MaterialButton(
                   child: Text(
-                    "follow"
+                    "show print-log"
                   ),
                   color: Colors.blue,
                   onPressed: (){
