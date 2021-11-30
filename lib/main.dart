@@ -52,6 +52,7 @@ class MyApp extends StatelessWidget {
                   }),
 
               MaterialButton(
+                color: Colors.red,
                   child: Text(
                     "UnSubscribe"
                   ),
