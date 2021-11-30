@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Row(
             children:[ MaterialButton(
+              child: Text(
+                "touch"
+              ),
               color: Colors.brown,
               onPressed: () {
                 Stream stream = controller.stream;
