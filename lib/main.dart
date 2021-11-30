@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
 
                   }),
 
+              //managing your streams to avoid memory leaks
               MaterialButton(
                 color: Colors.red,
                   child: Text(
