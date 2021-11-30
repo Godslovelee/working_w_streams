@@ -18,14 +18,20 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Center(
-          child: MaterialButton(
-            color: Colors.brown,
-            onPressed: () {
-              Stream stream = controller.stream;
+          child: Row(
+            children:[ MaterialButton(
+              color: Colors.brown,
+              onPressed: () {
+                Stream stream = controller.stream;
+                stream.listen((event) {
 
-          },
+                });
 
-          ),
+            },
+
+            ),
+         ] ),
+
         ),
       )
     );
