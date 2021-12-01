@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -76,4 +77,8 @@ class _MyAppState extends State<MyApp> {
       )
     );
   }
+}
+
+Future<double>getRandom()async{
+  var random = Random();
 }
