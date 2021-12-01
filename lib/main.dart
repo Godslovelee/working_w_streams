@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children:[ MaterialButton(
               child: Text(
-                "touch"
+                "subscribe"
               ),
               color: Colors.brown,
               onPressed: () {
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                 //added stream listener....
                 Stream stream = controller.stream;
                streamSubscription = stream.listen((event) {
-                  print("subscribe: $event");
+                  print("subscribe value: $event");
 
                 });
 
