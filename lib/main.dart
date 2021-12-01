@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         body: Center(
           child: Row(
+            mainAxisSize: MainAxisSize.min,
             children:[ MaterialButton(
               child: Text(
                 "touch"
