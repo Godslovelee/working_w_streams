@@ -82,6 +82,7 @@ class _MyAppState extends State<MyApp> {
 Future<double>getRandom()async{
   var random = Random();
    await Future.delayed(Duration(seconds: 2));
+   return random.nextDouble();
 
 
 }
