@@ -6,11 +6,18 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
 
   //adding stream controller
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   StreamController<double> controller = StreamController();
+
   StreamSubscription<double>streamSubscription;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
