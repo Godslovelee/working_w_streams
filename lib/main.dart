@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  StreamController<double> controller = StreamController();
+  StreamController<double> controller = StreamController<double>.broadcast();
 
   StreamSubscription<double>streamSubscription;
 
